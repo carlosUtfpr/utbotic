@@ -1,0 +1,170 @@
+@charset "UTF-8";
+* {
+  font-family: 'Open Sans', sans-serif; }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(1, 0, 15, 0.9); }
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: inset 0 0 6px #01000f; }
+
+.mr-auto, .mx-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important; }
+
+body {
+  background-color: black; }
+
+header .menu {
+  padding: .5% 4%;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+  header .menu .nav-item .nav-link {
+    color: #ffffffbd;
+    padding: 0.5rem 1.25rem; }
+    header .menu .nav-item .nav-link:hover {
+      color: white;
+      transition: 0.5s; }
+  header .menu .logo-menu {
+    max-width: 70%; }
+header .scroll {
+  background-color: #00000073; }
+
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: bottom;
+  color: white; }
+  #banner .owl-stage-outer, #banner .owl-stage, #banner .owl-item, #banner .item, #banner .sobre-banner {
+    height: 100%; }
+  #banner .sobre-banner {
+    background: black;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9220063025) 10%, rgba(0, 0, 0, 0.7371323529) 45%, #01000c 100%);
+    min-height: 100%; }
+    #banner .sobre-banner h1 {
+      text-align: right;
+      display: block;
+      width: 40%;
+      margin-left: auto;
+      padding-top: 20vh;
+      font-size: x-large; }
+    #banner .sobre-banner p {
+      text-align: right;
+      display: block;
+      width: 40%;
+      margin-left: auto;
+      text-decoration: underline; }
+
+#quem_somos {
+  background-color: #01000f; }
+  #quem_somos .row div h2 {
+    margin: 7% auto;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    text-transform: uppercase; }
+  #quem_somos .row div p {
+    text-align: justify;
+    color: white;
+    webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    /* padr├úo */
+    font-size: 15px; }
+  #quem_somos .row div .chamada {
+    text-align: center;
+    display: block;
+    width: 30%;
+    margin: 12% auto 0;
+    padding: 1.5% 3%;
+    color: #01000f;
+    font-size: large;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 600; }
+  #quem_somos .back {
+    color: #ababab;
+    font-size: x-large;
+    bottom: 5%; }
+    #quem_somos .back:hover {
+      color: white;
+      transition: 1s; }
+  #quem_somos .equipe .person {
+    display: inline-block;
+    width: 45%;
+    color: white; }
+    #quem_somos .equipe .person .photo-person {
+      display: inline-block;
+      width: 30%; }
+      #quem_somos .equipe .person .photo-person img {
+        max-width: 100%;
+        border-radius: 75px; }
+    #quem_somos .equipe .person .desc {
+      display: inline-block;
+      width: 65%;
+      margin-left: 3%; }
+      #quem_somos .equipe .person .desc p {
+        text-align: left;
+        column-count: auto; }
+        #quem_somos .equipe .person .desc p span {
+          font-size: 16px;
+          font-weight: 600; }
+
+#blog {
+  background-color: #191818;
+  background-image: url("../img/earth-3866609_1920.jpg");
+  background-blend-mode: hard-light;
+  background-size: cover; }
+  #blog h2 {
+    text-align: center;
+    padding: 2% 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: larger; }
+  #blog .card {
+    background-color: #c1c1ca;
+    padding: 0; }
+    #blog .card .card-body {
+      padding: 1.25rem; }
+      #blog .card .card-body .btn-primary {
+        display: inline-block;
+        width: 100%;
+        background-color: #01000f;
+        border-color: #01000f; }
+        #blog .card .card-body .btn-primary:focus {
+          box-shadow: none; }
+        #blog .card .card-body .btn-primary:hover {
+          font-size: large;
+          transition: .1s;
+          text-decoration: underline;
+          padding: 0.282rem 0.75rem; }
+  #blog .chamadaBlog {
+    text-align: center;
+    margin: 3% 0 1%;
+    font-size: large;
+    border: 3px solid #ffffffbd;
+    border-radius: 3px; }
+    #blog .chamadaBlog a {
+      display: inline-block;
+      width: 100%;
+      color: #ffffffbd;
+      padding: 1% 0; }
+
+footer {
+  text-align: center; }
+  footer p {
+    margin: .2%;
+    color: #ffffffbd;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: smaller; }
+
+/*# sourceMappingURL=style.css.map */

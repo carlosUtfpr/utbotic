@@ -1,0 +1,212 @@
+$black_menu: black;
+$black_menu_scroll: #00000073;
+$letter_menu: #ffffffbd;
+$back_q: #01000f;
+$Go_back: #ababab;
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: rgba(1,0,15,0.9);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2); 
+    -webkit-box-shadow: inset 0 0 6px rgba(1,0,15,1); 
+}
+
+.mr-auto, .mx-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+body{
+    background-color: black;
+}
+header{
+    .menu{
+        padding: .5% 4%;
+        background-color: $black_menu;
+        .nav-item .nav-link{
+            color: $letter_menu;
+            padding: 0.5rem 1.25rem;
+            &:hover{
+                color: white;
+                transition: 0.5s;
+            }
+        }
+        .logo-menu{
+            max-width: 70%;
+        }
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+    .scroll{
+        background-color: $black_menu_scroll;
+    }
+}
+#banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: bottom;
+    color: white;
+    .owl-stage-outer,.owl-stage,.owl-item, .item, .sobre-banner{
+        height: 100%;
+    }
+    .sobre-banner{
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,0.9220063025210083) 10%, rgba(0,0,0,0.7371323529411764) 45%, rgba(1,0,12,1) 100%);
+        min-height: 100%;
+        h1{
+            text-align: right;
+            display: block;
+            width: 40%;
+            margin-left: auto;
+            padding-top: 20vh;
+            font-size: x-large;
+        }
+        p{
+            text-align: right;
+            display: block;
+            width: 40%;
+            margin-left: auto;
+            text-decoration: underline;
+        }
+    }
+}
+
+#quem_somos{
+    background-color: $back_q;
+    .row div{
+        h2{
+            margin: 7% auto;
+            color: white;
+            font-size: larger;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: justify;
+            color: white;
+            webkit-column-count:2; /* Chrome, Safari, Opera */
+            -moz-column-count:2;    /* Firefox */
+            column-count:2;         /* padrão */
+            font-size: 15px;
+        }
+        .chamada{
+            text-align: center;
+            display: block;
+            width: 30%;
+            margin: 12% auto 0;
+            padding: 1.5% 3%;
+            color: $back_q;
+            font-size: large;
+            background-color: white;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+    }
+    .back{
+        color: $Go_back;
+        font-size: x-large;
+        bottom: 5%;
+        &:hover{
+            color: white;
+            transition: 1s;
+        }
+    }
+    .equipe{
+        .person{
+            display: inline-block;
+            width: 45%;
+            color: white;
+            .photo-person{
+                display: inline-block;
+                width: 30%;
+                img{
+                    max-width: 100%;
+                    border-radius: 75px;
+                }
+            }
+            .desc{
+                display: inline-block;
+                width: 65%;
+                margin-left: 3%;
+                p{
+                    text-align: left;
+                    column-count: auto;
+                    span{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#blog{
+    background-color: #191818;
+    background-image: url('../img/earth-3866609_1920.jpg');
+    background-blend-mode: hard-light;
+    background-size: cover;
+    h2{
+        text-align: center;
+        padding: 2% 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: larger;
+    }
+    .card{
+        background-color: #c1c1ca;
+        padding: 0;
+        .card-body{
+            padding: 1.25rem;
+            .btn-primary{
+                display: inline-block;
+                width: 100%;
+                background-color: $back_q;
+                border-color: $back_q;
+                &:focus{
+                    box-shadow: none;
+                }
+                &:hover{
+                    font-size: large;
+                    transition: .1s;
+                    text-decoration: underline;
+                    padding: 0.282rem 0.75rem;
+                }
+            }
+        }
+    }
+    .chamadaBlog{
+        text-align: center;
+        margin: 3% 0 1%;
+        font-size: large;
+        border: 3px solid $letter_menu;
+        border-radius: 3px;
+        a{
+            display: inline-block;
+            width: 100%;
+            color: $letter_menu;
+            padding: 1% 0;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    p{
+        margin: .2%;
+        color: $letter_menu;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: smaller;
+    }
+}
